@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Make directories
+mkdir -p ./images
+mkdir -p ./images/2D
+mkdir -p ./images/disc
+mkdir -p ./images/full
+
+# Get files using curl
+curl -o ./images/$1.png https://art.gametdb.com/wii/cover3D/US/$1.png
+curl -o ./images/2D/$1.png https://art.gametdb.com/wii/cover/US/$1.png
+curl -o ./images/disc/$1.png https://art.gametdb.com/wii/disc/US/$1.png
+curl -o ./images/full/$1.png https://art.gametdb.com/wii/coverfullHQ/US/$1.png
